@@ -15,6 +15,7 @@ namespace OWASP.WebGoat.NET
 	public partial class AddNewUser : System.Web.UI.Page
 	{
 		const string passwordQuestion = "What is your favorite color";
+                const string password="tes255252525";
 
 	    protected void Page_Load(object sender, EventArgs e)
 	    {
@@ -25,6 +26,7 @@ namespace OWASP.WebGoat.NET
 	    protected void CreateAccountButton_Click(object sender, EventArgs e)
 	    {
 	        MembershipCreateStatus createStatus;
+	         
 	
 	        MembershipUser newUser = 
 	             Membership.CreateUser(Username.Text, Password.Text,
